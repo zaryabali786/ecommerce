@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+*{
+
+	list-style-type: none;
+
+outline: none;
+overflow: hidden;
+
+
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color:lightgray;
+
+}
+
+
+
+.tabs ul li{
+float: left;
+margin: 5px;
+margin-left: 30px;
+cursor: pointer;
+
+
+}
+
+
+	.right{
+width: 652px;
+border: 2px solid black;
+margin: 50px;
+background-color: ;
+   display: flex;
+   height: 300px;
+
+	}
+.Registration{
+	display: none;
+
+}
+.login input{
+	
+	border: none;
+	width: 300px;
+	padding: 10px;
+	border-bottom: 1px solid black;
+	margin-bottom: 10px; 
+	margin-left: 10px;
+	margin-right: 10px;
+	display: block;
+	background-color:transparent; ;
+}
+.login button{
+
+	width: 90%;
+	padding: 10px ;
+	margin: 10px 10px;
+		color:white;
+	background-color: black;
+	border-radius: 10px;
+		border: none;
+
+
+}
+
+.Registration input{
+	border: none;
+		width: 300px;
+
+	padding: 10px;
+	border-bottom: 1px solid black;
+	margin-bottom: 10px; 
+	margin-left: 10px;
+	margin-right: 10px;
+	display: block;
+	background-color: transparent;
+}
+.Registration button{
+
+	border: none;
+	width: 90%;
+	padding: 10px ;
+	margin: 10px 10px;
+		color:white;
+	background-color: black;
+	border-radius: 10px;
+}
+.Registration button:hover{
+		color: black;
+		background-color: green;
+
+
+}
+.login button:hover{
+
+background-color: green;
+color: black;
+}
+
+</style>
+</head>
+<body>
+
+
+
+<div class="right">
+
+<div style="background-color: darkgray">
+	<img src="rocket.png" width="300px" style="display: block;"> 
+</div>
+<div>
+<div class="tabs">
+<ul >
+	<li class="reg-li">Registration</li>
+	<li class="login-li"> login</li>
+</ul>
+</div>
+
+
+
+<div class="login">
+	<input type="text" name="" placeholder="email">
+	<input type="password" name="" placeholder="passwords">
+	<button class="btn">Login</button>
+</div>
+
+<div class="Registration"  >
+		<input type="text" name="" placeholder="email">
+	<input type="password" name="" placeholder="password">
+		<input type="password" name="" placeholder="confirm password">
+
+	<button class="btn">Registration</button>
+
+</div>
+</div>
+
+</div>
+
+<script type="text/javascript" src="  js/jquery-3.5.1.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+	$('.login-li').click(function(){
+$('.Registration').hide();
+$('.login').show();
+
+
+	})
+
+$('.reg-li').click(function(){
+
+$('.Registration').show();
+$('.login').hide();
+
+})
+
+
+	})
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

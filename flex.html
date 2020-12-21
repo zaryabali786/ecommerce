@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+	
+*{
+
+	list-style-type: none;
+outline: none;
+overflow: hidden;
+
+
+}
+
+
+	.container{
+padding: 10px;
+border: 3px solid #000;
+
+display: flex;
+width: 700px;
+
+}	
+.Registration{
+	display: none;
+
+}
+
+.tabs ul li{
+float: left;
+margin: 5px;
+margin-left: 60px;
+cursor: pointer;
+
+
+}
+.login input{
+	
+	border: none;
+	width: 90%;
+	padding: 10px;
+	border-bottom: 1px solid black;
+	margin-bottom: 10px; 
+	margin-left: 10px;
+	margin-right: 10px;
+	background-color:;
+}
+.login button{
+
+	width: 90%;
+	padding: 10px ;
+	margin: 10px 10px;
+		color:white;
+	background-color: black;
+	border-radius: 10px;
+
+}
+
+.Registration input{
+		background-color: yellow;
+
+	border: none;
+	width: 90%;
+	padding: 10px;
+	border-bottom: 1px solid black;
+	margin-bottom: 10px; 
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.Registration button{
+
+	width: 90%;
+	padding: 10px ;
+	margin: 10px 10px;
+	color:white;
+	background-color: black;
+	border-radius: 10px;
+}
+.Registration button:hover{
+		color: black;
+		background-color: green;
+
+
+}
+.login button:hover{
+
+background-color: green;
+color: black;
+}
+
+
+</style>
+
+
+</head>
+<body>
+<div class="container">
+<div class=" item1">
+<img src="rocket.png">
+</div>	
+<div class=" item2">
+<div class="tabs"> <ul>
+	<li class="reg-li">Registration</li>
+	<li class="login-li"> login</li>
+</ul>
+</div>
+
+
+
+<div class="login">
+	<input type="text" name="" placeholder="email">
+	<input type="password" name="" placeholder="passwords">
+	<button class="btn">Login</button>
+</div>
+
+<div class="Registration"  >
+		<input type="text" name="" placeholder="email">
+	<input type="password" name="" placeholder="password">
+		<input type="password" name="" placeholder="confirm password">
+
+	<button class="btn">Registration</button>
+
+</div>
+
+</div>	
+	
+
+
+</div>
+
+
+
+<script type="text/javascript" src="  js/jquery-3.5.1.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+	$('.login-li').click(function(){
+$('.Registration').hide();
+$('.login').show();
+
+
+	})
+
+$('.reg-li').click(function(){
+
+$('.Registration').show();
+$('.login').hide();
+
+})
+
+
+	})
+
+</body>
+</html>
